@@ -17,7 +17,7 @@ const Navbar2 = () => {
             Beranda
           </Link>
           <Link
-            href="/"
+            href="/inflasi"
             className=" font-bold sm:p-2 text-[#57100d] hover:text-[#5488c4] my-auto text-xs sm:text-normal"
           >
             Inflasi
