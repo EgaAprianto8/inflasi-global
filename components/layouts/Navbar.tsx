@@ -41,7 +41,7 @@ const Navbar = () => {
               Inflasi Global
               </h1>
               <h3 className="">
-                Data Statistik Inflasi Global
+                Data Prediksi Inflasi Global
               </h3>
             </div>
           </Link>
