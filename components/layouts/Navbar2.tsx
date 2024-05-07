@@ -30,19 +30,10 @@ const Navbar2 = () => {
           </Link>
           <Link
             href="/tentang-kami"
-            className="text-[#5488c4] flex sm:hidden ml-auto shadow-md rounded-md p-1"
+            className="text-[#5488c4] flex ml-auto shadow-md rounded-md p-1"
           >
             <MdContactSupport size={20} />
           </Link>
-          <div className="my-auto sm:ml-auto hidden sm:flex">
-            <Link
-              href="/tentang-kami"
-              title="/tentang-kami"
-              className=" text-xs sm:text-normal sm:py-4 sm:px-8 p-1 text-center bg-[#5488c4] text-white w-full rounded-md sm:font-bold hover:bg-[#3e6491] ease-in-out duration-300"
-            >
-              Hubungi Kami
-            </Link>
-          </div>
         </div>
       </div>
     </>

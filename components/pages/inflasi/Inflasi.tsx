@@ -10,7 +10,7 @@ const Inflasi = () => {
       <div className="flex flex-col">
         <div className="flex flex-row justify-center items-center">
           <Tabs defaultValue="inflasi" className="w-full">
-            <div className="flex justify-center bg-white py-4 ">
+            <div className="flex relative rounded-full justify-center bg-[#3e6491] z-10 py-6 sm:w-[600px] mx-auto -mt-16 sm:-mt-10">
               <TabsList>
                 <TabsTrigger value="inflasi">Apa itu Inflasi ?</TabsTrigger>
                 <TabsTrigger value="datasetinflasi">
@@ -22,68 +22,114 @@ const Inflasi = () => {
               </TabsList>
             </div>
             <TabsContent value="inflasi">
-              <div className="flex flex-row flex-wrap mx-auto items-center bg-white justify-center w-full rounded-xl shadow-lg px-4 sm:px-6 md:px-8 lg:px-20 mt-4">
-                <div className="flex flex-wrap flex-row lg:gap-10 gap-4 justify-center">
-                  <div className="container mx-auto mt-20 mb-16 sm:mb-24 md:mb-28">
-                    <div className="flex flex-col xl:flex-nowrap flex-wrap sm:flex-row sm:items-start items-center justify-center">
+              <div className="mt-[75px] pb-4 container mx-auto">
+                <div className="border-b-2 pb-4">
+                  <h1 className="text-lg sm:text-4xl font-bold">
+                    Apa itu Inflasi ?
+                  </h1>
+                </div>
+                <div className="mt-4">
+                  <div>
+                    <div className="relative w-full aspect-video rounded-md bg-gray-100 overflow-hidden">
                       <Image
-                        src="/images/about-image-1.png"
-                        width={650}
-                        height={400}
-                        alt="About-Inflation"
-                        className="mt-4"
+                        src="/image/inflasi.png"
+                        alt="article"
+                        fill={true}
+                        className="object-cover"
                       />
-                      <div className="">
-                        <p className="text-[#7141b1] md:text-sm sm:text-xs text-xs font-extrabold">
-                          TENTANG INFLASI
-                        </p>
-                        <h1 className="md:text-4xl sm:text-3xl text-3xl mt-2 font-black w-full ">
-                          `Informasi mengenai inflasi`
-                        </h1>
-                        <p className="text-[#6d6d6d] xl:w-[600px] lg:w-[880px] md:w-[670px] mt-6">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Reprehenderit enim vel, facere aperiam ullam ex
-                          repudiandae aspernatur quasi necessitatibus, provident
-                          dolores quas veritatis maxime accusantium vitae?
-                          Eligendi officia voluptates fugiat. Lorem ipsum, dolor
-                          sit amet consectetur adipisicing elit. Ducimus nulla
-                          accusamus ipsum id voluptatum quo harum veniam. Sunt
-                          iusto optio reiciendis saepe error numquam vero quod,
-                          officia quo veniam unde! Lorem ipsum dolor sit amet
-                          consectetur adipisicing elit. Soluta nulla repellat
-                          libero consequatur nisi itaque tenetur aliquid,
-                          dolorem sapiente ipsam, cumque quidem. Tempora,
-                          placeat? Dicta et perferendis sed quam nemo?
-                        </p>
-                        <p className=" xl:w-[600px] lg:w-[880px] md:w-[670px] italic font-bold mt-20 ">
-                          Lorem, ipsum dolor sit amet consectetur adipisicing
-                          elit. Pariatur numquam repellat voluptatum dolore,
-                          voluptatem harum ad mollitia sit omnis ullam ut optio
-                          illo sapiente fuga facere quod, expedita impedit et?
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit. Praesentium nulla blanditiis neque autem soluta
-                          atque tempora numquam tenetur laudantium culpa eius
-                          inventore tempore quam dolorem itaque porro, vel, eum
-                          odio!
-                        </p>
-                      </div>
                     </div>
+                    <p className="text-sm text-gray-600 mt-2 text-center">
+                      <b>Gambar 1</b>{" "}
+                      <span className="italic">
+                        Inflasi
+                      </span>
+                    </p>
+                  </div>
+                  <div className="mt-4 mb-6 space-y-2">
+                    <h3 className="text-xl sm:text-3xl font-bold">
+                      Pengertian Inflasi
+                    </h3>
+                    <p className="text-gray-600 text-justify sm:text-2xl">
+                      Inflasi adalah fenomena di mana harga barang dan jasa
+                      secara umum naik secara signifikan dalam jangka waktu
+                      tertentu. Hal ini mengakibatkan daya beli uang menurun,
+                      sehingga uang kita tidak lagi memiliki nilai yang sama
+                      seperti sebelumnya. Inflasi sering diukur dengan mengamati
+                      perubahan indeks harga konsumen (CPI), yang mencatat
+                      perubahan harga barang konsumsi yang sering dibeli oleh
+                      masyarakat.
+                    </p>
+                  </div>
+                  <div className="mt-4 mb-6 space-y-2">
+                    <h3 className="text-xl sm:text-3xl font-bold">
+                      Penyebab Inflasi
+                    </h3>
+                    <p className="text-gray-600 text-justify sm:text-2xl">
+                      Ada beberapa faktor yang dapat menyebabkan inflasi. Salah
+                      satunya adalah permintaan yang berlebihan, di mana
+                      permintaan akan barang dan jasa melebihi penawaran yang
+                      tersedia. Hal ini dapat terjadi misalnya ketika pemerintah
+                      mencetak terlalu banyak uang atau ketika ekonomi sedang
+                      booming. Selain itu, biaya produksi yang meningkat,
+                      seperti harga bahan baku dan tenaga kerja, juga dapat
+                      menyebabkan inflasi.
+                    </p>
+                  </div>
+                  <div className="mt-4 mb-6 space-y-2">
+                    <h3 className="text-xl sm:text-3xl font-bold">
+                      Dampak Inflasi
+                    </h3>
+                    <p className="text-gray-600 text-justify sm:text-2xl">
+                      Inflasi memiliki dampak yang kompleks terhadap berbagai
+                      aspek kehidupan ekonomi. Salah satunya adalah mengurangi
+                      daya beli uang, sehingga konsumen harus mengeluarkan lebih
+                      banyak uang untuk membeli barang dan jasa yang sama. Ini
+                      juga dapat menyebabkan ketidakstabilan ekonomi, karena
+                      harga yang naik secara tiba-tiba dapat mengganggu
+                      perencanaan bisnis dan investasi.
+                    </p>
+                  </div>
+                  <div className="mt-4 mb-6 space-y-2">
+                    <h3 className="text-xl sm:text-3xl font-bold">
+                      Pengendalian Inflasi
+                    </h3>
+                    <p className="text-gray-600 text-justify sm:text-2xl">
+                      Pemerintah dan bank sentral biasanya berusaha untuk
+                      mengendalikan inflasi agar tetap stabil dan terkendali.
+                      Salah satu cara yang sering digunakan adalah kebijakan
+                      moneter, seperti menaikkan suku bunga untuk mengurangi
+                      jumlah uang beredar atau mengatur jumlah uang yang beredar
+                      melalui kebijakan pengendalian moneter.
+                    </p>
+                  </div>
+                  <div className="mt-4 mb-6 space-y-2">
+                    <h3 className="text-xl sm:text-3xl font-bold">
+                      Inflasi Global
+                    </h3>
+                    <p className="text-gray-600 text-justify sm:text-2xl">
+                      Inflasi tidak hanya terjadi di satu negara, tetapi dapat
+                      mempengaruhi seluruh dunia. Kondisi ekonomi global,
+                      seperti fluktuasi harga komoditas dan nilai tukar mata
+                      uang, dapat berkontribusi terhadap inflasi global. Ini
+                      membuat pentingnya kerjasama antarnegara dan kebijakan
+                      koordinasi dalam mengelola inflasi di tingkat global.
+                    </p>
                   </div>
                 </div>
               </div>
             </TabsContent>
             <TabsContent value="datasetinflasi">
-              <div className="flex flex-row flex-wrap mx-auto items-center bg-white justify-center w-full rounded-xl shadow-lg px-4 sm:px-6 md:px-8 lg:px-20 mt-4 py-8">
-                <div className="flex flex-wrap flex-row lg:gap-10 gap-4 justify-center">
-                  Ini akan berisikan dataset inflasi yang kami gunakan untuk memprediksi inflasi 2025
-                </div>
+              <div className="mt-[75px] pb-4 container mx-auto">
+                <p className="text-center">
+                Tabel dataset akan berada pada halaman ini, dan pengguna akan dapat mengunduh csv nya
+                </p>
               </div>
             </TabsContent>
             <TabsContent value="prediksiinflasi">
-              <div className="flex flex-row flex-wrap mx-auto items-center bg-white justify-center w-full rounded-xl shadow-lg px-4 sm:px-6 md:px-8 lg:px-20 mt-4 py-8">
-                <div className="flex flex-wrap flex-row lg:gap-10 gap-4 justify-center">
-                  Halaman ini akan berisikan Prediksi Inflasi
-                </div>
+              <div className="mt-[75px] pb-4 container mx-auto">
+              <p className="text-center">
+               Hasil Prediksi akan berada pada halaman ini
+                </p>
               </div>
             </TabsContent>
           </Tabs>

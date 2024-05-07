@@ -47,7 +47,7 @@ const Navbar = () => {
           </Link>
           <div className="flex mx-auto my-auto">
             <div className="flex flex-row border-0 rounded-md bg-[#f5f5f5]">
-              <div className="my-auto border-r border-[#a8a8a8]-2">
+              {/* <div className="my-auto border-r border-[#a8a8a8]-2">
                 <Select>
                   <SelectTrigger className="sm:w-[150px] w-full">
                     <div className="sm:flex hidden">
@@ -60,7 +60,7 @@ const Navbar = () => {
                     <SelectItem value="kategori3">Kategori 2</SelectItem>
                   </SelectContent>
                 </Select>
-              </div>
+              </div> */}
               <Input
                 type="search"
                 placeholder="Search"
